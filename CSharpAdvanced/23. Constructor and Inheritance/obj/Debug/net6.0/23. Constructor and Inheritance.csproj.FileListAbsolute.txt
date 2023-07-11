@@ -1,0 +1,15 @@
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\bin\Debug\net6.0\23. Constructor and Inheritance.exe
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\bin\Debug\net6.0\23. Constructor and Inheritance.deps.json
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\bin\Debug\net6.0\23. Constructor and Inheritance.runtimeconfig.json
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\bin\Debug\net6.0\23. Constructor and Inheritance.dll
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\bin\Debug\net6.0\23. Constructor and Inheritance.pdb
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.csproj.AssemblyReference.cache
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.AssemblyInfoInputs.cache
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.AssemblyInfo.cs
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.csproj.CoreCompileInputs.cache
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.dll
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\refint\23. Constructor and Inheritance.dll
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.pdb
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\23. Constructor and Inheritance.genruntimeconfig.cache
+F:\Đi làm\CSharpAdvanced\23. Constructor and Inheritance\obj\Debug\net6.0\ref\23. Constructor and Inheritance.dll

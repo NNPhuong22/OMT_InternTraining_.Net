@@ -1,0 +1,15 @@
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\bin\Debug\net6.0\16.Exercise.exe
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\bin\Debug\net6.0\16.Exercise.deps.json
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\bin\Debug\net6.0\16.Exercise.runtimeconfig.json
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\bin\Debug\net6.0\16.Exercise.dll
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\bin\Debug\net6.0\16.Exercise.pdb
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.csproj.AssemblyReference.cache
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.GeneratedMSBuildEditorConfig.editorconfig
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.AssemblyInfoInputs.cache
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.AssemblyInfo.cs
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.csproj.CoreCompileInputs.cache
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.dll
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\refint\16.Exercise.dll
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.pdb
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\16.Exercise.genruntimeconfig.cache
+F:\Đi làm\CSharpAdvanced\CSharpAdvanced\obj\Debug\net6.0\ref\16.Exercise.dll
