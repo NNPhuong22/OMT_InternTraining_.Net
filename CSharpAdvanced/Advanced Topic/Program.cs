@@ -301,7 +301,31 @@ namespace Asynchronous
         }
         public static async Task AnotherTask()
         {
-            Console.WriteLine("Loading task 2");
+            Console.WriteLine("1. Loading task 2");
+            Console.WriteLine("2. Loading task 2");
+            Console.WriteLine("3. Loading task 2");
+            Console.WriteLine("4. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("5. Loading task 2");
+            Console.WriteLine("123. Loading task 2");
         }
         static async Task Main(string[] args)
         {
@@ -311,7 +335,6 @@ namespace Asynchronous
             Console.WriteLine("Downloading...");
             await Task.WhenAll(taskdonload, a);
             Console.WriteLine("Download success");
-
         }
     }
 }
