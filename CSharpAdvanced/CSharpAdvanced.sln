@@ -7,17 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16.Exercise", "CSharpAdvanc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lambda Expressions", "Lambda Expressions\Lambda Expressions.csproj", "{B772A658-A8E0-42C8-91C7-6F02F4424B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Inheritance", "18. Inheritance\18. Inheritance.csproj", "{67460C45-EA20-4E05-959B-8CAE07D955D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18. Inheritance", "18. Inheritance\18. Inheritance.csproj", "{67460C45-EA20-4E05-959B-8CAE07D955D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composition", "Composition\Composition.csproj", "{F3C54D19-9EBF-45F5-B2AE-66F30A565300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composition", "Composition\Composition.csproj", "{F3C54D19-9EBF-45F5-B2AE-66F30A565300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22. Access modifier", "22. Access modifier\22. Access modifier.csproj", "{CED087E9-D632-48A3-BD85-7CF619879BBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22. Access modifier", "22. Access modifier\22. Access modifier.csproj", "{CED087E9-D632-48A3-BD85-7CF619879BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23. Constructor and Inheritance", "23. Constructor and Inheritance\23. Constructor and Inheritance.csproj", "{DD1B2E4C-2882-46DB-A7CC-56EB7A221A47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "23. Constructor and Inheritance", "23. Constructor and Inheritance\23. Constructor and Inheritance.csproj", "{DD1B2E4C-2882-46DB-A7CC-56EB7A221A47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "Casting\Casting.csproj", "{C589609D-C7CB-4755-B201-26F591947044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Casting", "Casting\Casting.csproj", "{C589609D-C7CB-4755-B201-26F591947044}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27. Exercise", "27. Exercise\27. Exercise.csproj", "{59DC17E2-C66D-4D48-AFFF-598B189BA9E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "27. Exercise", "27. Exercise\27. Exercise.csproj", "{59DC17E2-C66D-4D48-AFFF-598B189BA9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced Topic", "Advanced Topic\Advanced Topic.csproj", "{69048862-E49E-4040-94F9-F9907D35700F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{59DC17E2-C66D-4D48-AFFF-598B189BA9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59DC17E2-C66D-4D48-AFFF-598B189BA9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59DC17E2-C66D-4D48-AFFF-598B189BA9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69048862-E49E-4040-94F9-F9907D35700F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69048862-E49E-4040-94F9-F9907D35700F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69048862-E49E-4040-94F9-F9907D35700F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69048862-E49E-4040-94F9-F9907D35700F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

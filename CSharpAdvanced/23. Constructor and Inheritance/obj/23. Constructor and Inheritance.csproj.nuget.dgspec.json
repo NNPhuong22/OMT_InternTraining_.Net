@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Đi làm\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj": {}
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj": {}
   },
   "projects": {
-    "F:\\Đi làm\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj": {
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Đi làm\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj",
+        "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj",
         "projectName": "23. Constructor and Inheritance",
-        "projectPath": "F:\\Đi làm\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj",
+        "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\23. Constructor and Inheritance\\23. Constructor and Inheritance.csproj",
         "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-        "outputPath": "F:\\Đi làm\\CSharpAdvanced\\23. Constructor and Inheritance\\obj\\",
+        "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\23. Constructor and Inheritance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",

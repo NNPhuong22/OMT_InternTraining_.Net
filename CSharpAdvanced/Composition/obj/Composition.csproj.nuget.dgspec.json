@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Đi làm\\CSharpAdvanced\\Composition\\Composition.csproj": {}
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Composition\\Composition.csproj": {}
   },
   "projects": {
-    "F:\\Đi làm\\CSharpAdvanced\\Composition\\Composition.csproj": {
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Composition\\Composition.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Đi làm\\CSharpAdvanced\\Composition\\Composition.csproj",
+        "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Composition\\Composition.csproj",
         "projectName": "Composition",
-        "projectPath": "F:\\Đi làm\\CSharpAdvanced\\Composition\\Composition.csproj",
+        "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Composition\\Composition.csproj",
         "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-        "outputPath": "F:\\Đi làm\\CSharpAdvanced\\Composition\\obj\\",
+        "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Composition\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",

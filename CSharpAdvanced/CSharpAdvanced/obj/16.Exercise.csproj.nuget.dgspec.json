@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Đi làm\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj": {}
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj": {}
   },
   "projects": {
-    "F:\\Đi làm\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj": {
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Đi làm\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj",
+        "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj",
         "projectName": "16.Exercise",
-        "projectPath": "F:\\Đi làm\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj",
+        "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\CSharpAdvanced\\16.Exercise.csproj",
         "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-        "outputPath": "F:\\Đi làm\\CSharpAdvanced\\CSharpAdvanced\\obj\\",
+        "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\CSharpAdvanced\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",

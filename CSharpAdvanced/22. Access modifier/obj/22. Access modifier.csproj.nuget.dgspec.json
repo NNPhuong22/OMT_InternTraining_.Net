@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Đi làm\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj": {}
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj": {}
   },
   "projects": {
-    "F:\\Đi làm\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj": {
+    "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Đi làm\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj",
+        "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj",
         "projectName": "22. Access modifier",
-        "projectPath": "F:\\Đi làm\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj",
+        "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj",
         "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-        "outputPath": "F:\\Đi làm\\CSharpAdvanced\\22. Access modifier\\obj\\",
+        "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",

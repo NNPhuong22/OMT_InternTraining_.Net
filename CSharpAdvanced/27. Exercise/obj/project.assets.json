@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Đi làm\\CSharpAdvanced\\27. Exercise\\27. Exercise.csproj",
+      "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\27. Exercise\\27. Exercise.csproj",
       "projectName": "27. Exercise",
-      "projectPath": "F:\\Đi làm\\CSharpAdvanced\\27. Exercise\\27. Exercise.csproj",
+      "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\27. Exercise\\27. Exercise.csproj",
       "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-      "outputPath": "F:\\Đi làm\\CSharpAdvanced\\27. Exercise\\obj\\",
+      "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\27. Exercise\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",

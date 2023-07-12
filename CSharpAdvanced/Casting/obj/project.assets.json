@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Đi làm\\CSharpAdvanced\\Casting\\Casting.csproj",
+      "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Casting\\Casting.csproj",
       "projectName": "Casting",
-      "projectPath": "F:\\Đi làm\\CSharpAdvanced\\Casting\\Casting.csproj",
+      "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Casting\\Casting.csproj",
       "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-      "outputPath": "F:\\Đi làm\\CSharpAdvanced\\Casting\\obj\\",
+      "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Casting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
