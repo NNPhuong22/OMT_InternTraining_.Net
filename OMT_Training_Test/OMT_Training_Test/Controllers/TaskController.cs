@@ -18,45 +18,40 @@ namespace OMT_Training_Test.Controllers
             _context = context;
             _configuration = configuration;
         }
+        [NonAction]
+        public bool CheckTag(int? id)
+        {
+            if (_context.Tags.SingleOrDefault(o => o.TagId == id) != null)
+            {
+                return true;
+            }
+            return false;
+        }
         [HttpGet]
         public async Task<IActionResult> Tasks(string? keyWord = "", int? status = null, int? tag = 0, int page = 1)
         {
-            var result = await _context.Tasks.ToListAsync();
+            var query = _context.Tasks.AsQueryable();
             if (status == 99)
             {
-                result = result.Where(o => (o.TaskName == keyWord) || (o.TaskDescription == keyWord) || keyWord == "")
+                query = query.Where(o => (o.TaskName.ToLower().Trim().Contains(keyWord.ToLower().Trim()))
+                || (o.TaskDescription.Trim().ToLower().Contains(keyWord.Trim().ToLower())) || keyWord == "")
                .Where(o => o.Status == 1 && DateTime.Compare(o.FinishDate, DateTime.Now) < 1)
-               .Where(o => o.TagId == tag || tag == 0).ToList();
+               .Where(o => o.TagId == tag || tag == 0);
             }
             else
             {
-                result = result.Where(o => (o.TaskName == keyWord) || (o.TaskDescription == keyWord) || keyWord == "")
-                .Where(o => o.Status == status || status == null).Where(o => o.TagId == tag || tag == 0).ToList();
+                query = query.Where(o => (o.TaskName.ToLower().Trim().Contains(keyWord.ToLower().Trim()))
+                || (o.TaskDescription.Trim().ToLower().Contains(keyWord.Trim().ToLower())) || keyWord == "")
+                .Where(o => o.Status == status || status == null).Where(o => o.TagId == tag || tag == 0);
             }
-            if (result.Count() < 10)
-            {
-                return Ok(new ResponseData<Models.Task>
-                {
-                    CurrentPage = page,
-                    TotalPage = 1,
-                    Data = result
+            var a = await query.CountAsync();
+            var result = await query.Skip((page - 1) * 10).Take(10).ToListAsync();
 
-                });
-            }
-            else if (result.Count() > 10)
-            {
-                return Ok(new ResponseData<Models.Task>
-                {
-                    CurrentPage = page,
-                    TotalPage = 1,
-                    Data = result.Skip(page - 1).Take(10).ToList()
-
-                }); ;
-            }
+            var pageNum = (int)Math.Ceiling((decimal)a / 10);
             return Ok(new ResponseData<Models.Task>
             {
                 CurrentPage = 1,
-                TotalPage = 0,
+                TotalPage = pageNum,
                 Data = result
 
             }); ;
@@ -87,6 +82,7 @@ namespace OMT_Training_Test.Controllers
                     errorMessage.Add("Lỗi định dạng ngày");
                     validate = false;
                 }
+                //TODO: check tag
 
                 if (validate)
                 {
@@ -99,7 +95,7 @@ namespace OMT_Training_Test.Controllers
                         TagId = task.TagId
                     };
                     _context.Tasks.Add(addedTask);
-                    if (task.TagId != null)
+                    if (CheckTag(task.TagId))
                     {
                         var tag = _context.Tags.SingleOrDefault(o => o.TagId == task.TagId);
                         tag.OpenNumber += 1;
@@ -159,10 +155,42 @@ namespace OMT_Training_Test.Controllers
                     }
                     if (validate)
                     {
-                        taskEdited.Status = task.Status;
                         taskEdited.FinishDate = Convert.ToDateTime(task.FinishDate);
                         taskEdited.TaskDescription = task.TaskDescription;
+                        if (task.TagId != null && CheckTag(task.TagId) && taskEdited.TagId != task.TagId)
+                        {
+                            var newTag = _context.Tags.SingleOrDefault(o => o.TagId == task.TagId);
+                            var oldTag = _context.Tags.SingleOrDefault(o => o.TagId == taskEdited.TagId);
+                            if (taskEdited.TagId != task.TagId)
+                            {
+                                if (taskEdited.Status == 1)
+                                {
+                                    oldTag.OpenNumber -= 1;
+                                }
+                                else if (taskEdited.Status == 2)
+                                {
+                                    oldTag.FinishNumber -= 1;
+                                }
+                                else if (taskEdited.Status == 3)
+                                {
+                                    oldTag.CloseNumber -= 1;
+                                }
+                                if (task.Status == 1)
+                                {
+                                    newTag.OpenNumber += 1;
+                                }
+                                else if (task.Status == 2)
+                                {
+                                    newTag.FinishNumber += 1;
+                                }
+                                else if (task.Status == 3)
+                                {
+                                    newTag.CloseNumber += 1;
+                                }
+                            }
+                        }
                         taskEdited.TagId = task.TagId;
+
                         taskEdited.TaskName = task.TaskName;
                         _context.Update(taskEdited);
                         _context.SaveChanges();
