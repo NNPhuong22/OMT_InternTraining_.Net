@@ -17,9 +17,9 @@ namespace Ex2_OMT.Models
         }
 
         public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<CommentPost> CommentPosts { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<ReplyPost> ReplyPosts { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<SubReply> SubReplies { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
@@ -41,28 +41,6 @@ namespace Ex2_OMT.Models
                 entity.Property(e => e.CategoryName)
                     .IsRequired()
                     .HasMaxLength(50);
-            });
-
-            modelBuilder.Entity<CommentPost>(entity =>
-            {
-                entity.HasKey(e => e.CmtId);
-
-                entity.ToTable("CommentPost");
-
-                entity.Property(e => e.CmtContent)
-                    .IsRequired()
-                    .HasMaxLength(250);
-
-                entity.HasOne(d => d.Post)
-                    .WithMany(p => p.CommentPosts)
-                    .HasForeignKey(d => d.PostId)
-                    .HasConstraintName("FK_CommentPost_Post");
-
-                entity.HasOne(d => d.ReplierNavigation)
-                    .WithMany(p => p.CommentPosts)
-                    .HasForeignKey(d => d.Replier)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_CommentPost_User");
             });
 
             modelBuilder.Entity<Post>(entity =>
@@ -112,6 +90,15 @@ namespace Ex2_OMT.Models
                     .HasConstraintName("FK_ReplyPost_User");
             });
 
+            modelBuilder.Entity<Role>(entity =>
+            {
+                entity.ToTable("Role");
+
+                entity.Property(e => e.RoleName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+            });
+
             modelBuilder.Entity<SubReply>(entity =>
             {
                 entity.HasKey(e => e.SubId);
@@ -143,6 +130,12 @@ namespace Ex2_OMT.Models
                 entity.Property(e => e.UserName)
                     .IsRequired()
                     .HasMaxLength(50);
+
+                entity.HasOne(d => d.RoleNavigation)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.Role)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_User_Role");
             });
 
             OnModelCreatingPartial(modelBuilder);

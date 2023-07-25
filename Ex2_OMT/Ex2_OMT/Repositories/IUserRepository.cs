@@ -4,7 +4,7 @@ namespace Ex2_OMT.Repositories
 {
     public interface IUserRepository
     {
-        Task<ResponseData<Models.User>> GetAll(string? search = "", int? role = null, int page = 1, int? isDisabled = null);
+        Task<ResponseData<Models.User>> GetAll(string? search = "", int? role = null, int page = 1);
         Task<ApiResponse<User>> DisableUser(int id);
         Task<ApiResponse<User>> EnableUser(int id);
         Task<ApiResponse<User>> ChangePassword(PasswordDTO pass, int claim);
