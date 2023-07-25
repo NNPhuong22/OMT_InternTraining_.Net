@@ -66,5 +66,8 @@ namespace Ex2.Controllers
             var userRegister = await _userRepository.GetUser(id);
             return Ok(userRegister);
         }
+
+
+
     }
 }

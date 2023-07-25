@@ -7,7 +7,6 @@ namespace Ex2_OMT.Models
     {
         public Post()
         {
-            CommentPosts = new HashSet<CommentPost>();
             ReplyPosts = new HashSet<ReplyPost>();
         }
 
@@ -21,7 +20,6 @@ namespace Ex2_OMT.Models
 
         public virtual Category Category { get; set; }
         public virtual User CreatedNavigation { get; set; }
-        public virtual ICollection<CommentPost> CommentPosts { get; set; }
         public virtual ICollection<ReplyPost> ReplyPosts { get; set; }
     }
 }

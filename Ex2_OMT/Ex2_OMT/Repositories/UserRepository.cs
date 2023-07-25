@@ -12,9 +12,10 @@ namespace Ex2_OMT.Repositories
             _context = context;
             _configuration = configuration;
         }
-        public async Task<ResponseData<Models.User>> GetAll(string? search = "", int? role = null, int page = 1, int? isDisabled = null)
+        public async Task<ResponseData<Models.User>> GetAll(string? search = "", int? role = null, int page = 1)
         {
-            var query = _context.Users.Where(o => o.IsDisabled == isDisabled || isDisabled == null).Where(o => o.UserName.ToLower().Trim().Contains(search.ToLower().Trim()))
+            var query = _context.Users.Where(o => o.IsDisabled == 0)
+                .Where(o => o.UserName.ToLower().Trim().Contains(search.ToLower().Trim()))
                 .Where(o => o.Role == role || role == null);
             var a = await query.CountAsync();
             var result = await query.Skip((page - 1) * 10).Take(10).ToListAsync();
