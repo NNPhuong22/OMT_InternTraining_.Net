@@ -18,6 +18,8 @@
                  */
 
                 // khi trong hàm chưa có code và chưa return lại gì thì dùng NotImplementedException() để không bị lỗi trong compile time
+                //dunp: hàm này   public T this[int index] được gọi là gì, và dùng ntn trong C#
+                
                 get { throw new NotImplementedException(); }
             }
         }
