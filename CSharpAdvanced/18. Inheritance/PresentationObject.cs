@@ -1,14 +1,15 @@
 ﻿namespace Inheritance
 {
-    public class PresentationObject
+    public abstract class PresentationObject
     {
         public int Width { get; set; }
         public int Height { get; set; }
-        public void Copy()
+        public abstract void Identify();
+        public virtual void Copy()
         {
             Console.WriteLine("Object copied to clipboard");
         }
-        public void Duplicate()
+        public virtual void Duplicate()
         {
             Console.WriteLine("Object was duplicated");
         }
