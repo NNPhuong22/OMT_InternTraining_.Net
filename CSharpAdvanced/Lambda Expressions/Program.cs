@@ -4,6 +4,8 @@ namespace LambdaExpressions
 {
     class Program
     {
+        // gán cho delegate
+        public delegate int Caculate(int a, int b);
         static void Main(string[] args)
         {
             Func<int, int> square = number => number * number;
@@ -14,6 +16,20 @@ namespace LambdaExpressions
             {
                 Console.WriteLine(item.Title);
             }
+            // gán lambda cho func
+            Func<int, int, int> caculate = (int x, int y) => { return x + y; };
+            // gán lambda cho action 
+            Action<int> mess = (int x) => { Console.WriteLine(x); };
+
+            var a = caculate(1, 2);
+            mess(a);
+
+            Console.WriteLine(caculate);
+
+            // Lambda expression using in LinQ
+
+            bookList.Where(o => o.Price < 10).ToList();
+            bookList.SingleOrDefault(o => o.Title == "Title 1");
         }
         static bool IsCheaperThan10(Book book)
         {
