@@ -76,6 +76,8 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddDbContext<Ex2Context>(opt => opt.UseSqlServer(
             builder.Configuration.GetConnectionString("MyPost")));
 //Add transient
+//dunp: giải thích vì sao xài transient mà ko phải là scoped or singleton 
+// giải thích thêm scoped là ntn, singleton là ntn trong asp.net 
 builder.Services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();

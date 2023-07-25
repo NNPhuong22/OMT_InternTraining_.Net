@@ -21,3 +21,5 @@ namespace LambdaExpressions
         }
     }
 }
+
+//dunp: đọc thêm , viết các ví dụ chạy trên console dựa trên https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions

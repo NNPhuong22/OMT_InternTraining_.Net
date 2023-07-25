@@ -13,4 +13,6 @@ namespace ExtensionMethod
             return result;
         }
     }
+    //dunp: bài tập: thử viết 1 hàm đưa, 2 string là số , rồi cộng vào nhau , 2 số siêu to 
+    //vd CongHaiSo("99999999999999999999999999999999999999999999999999","9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999")
 }

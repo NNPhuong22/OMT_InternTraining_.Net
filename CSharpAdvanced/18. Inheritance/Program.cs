@@ -10,4 +10,5 @@
             text.AddHyperLink("Facebook.com");
         }
     }
+    //dunp: viết thêm  code về cách dùng abstract  class, method 
 }
