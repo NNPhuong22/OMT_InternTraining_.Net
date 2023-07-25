@@ -156,18 +156,20 @@
 
 
 // 10. Extension method
-//namespace ExtensionMethod
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            string a = "";
-//            ExtensionMethod.String.CheckNull(a);
-//            a.CheckNull();
-//        }
-//    }
-//}
+namespace ExtensionMethod
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //string a = "";
+            //ExtensionMethod.String.CheckNull(a);
+            //a.CheckNull();
+            var a = ExtensionMethod.String.CongHaiSo("99999999999999999999999999999999999999999999999999", "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999");
+            Console.WriteLine(a);
+        }
+    }
+}
 
 
 // 11. LinQ
@@ -271,70 +273,70 @@
 
 // 15. Asynchronous
 
-using System.Net;
+//using System.Net;
 
-namespace Asynchronous
-{
-    public class DownloadAsync
-    {
+//namespace Asynchronous
+//{
+//    public class DownloadAsync
+//    {
 
-        public static async Task DownloadFile(string url)
-        {
-            Action downloadaction = () =>
-            {
-                using (var client = new WebClient())
-                {
-                    Console.WriteLine("Starting download ..." + url);
+//        public static async Task DownloadFile(string url)
+//        {
+//            Action downloadaction = () =>
+//            {
+//                using (var client = new WebClient())
+//                {
+//                    Console.WriteLine("Starting download ..." + url);
 
-                    byte[] data = client.DownloadData(new Uri(url));
+//                    byte[] data = client.DownloadData(new Uri(url));
 
-                    string filename = System.IO.Path.GetFileName(url);
-                    System.IO.File.WriteAllBytes(filename, data);
-                }
-            };
+//                    string filename = System.IO.Path.GetFileName(url);
+//                    System.IO.File.WriteAllBytes(filename, data);
+//                }
+//            };
 
-            Task task = new Task(downloadaction);
-            task.Start();
+//            Task task = new Task(downloadaction);
+//            task.Start();
 
-            await task;
-            Console.WriteLine("Download file complete");
-        }
-        public static async Task AnotherTask()
-        {
-            Console.WriteLine("1. Loading task 2");
-            Console.WriteLine("2. Loading task 2");
-            Console.WriteLine("3. Loading task 2");
-            Console.WriteLine("4. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("5. Loading task 2");
-            Console.WriteLine("123. Loading task 2");
-        }
-        static async Task Main(string[] args)
-        {
-            string url = "https://github.com/microsoft/vscode/archive/1.48.0.tar.gz";
-            var taskdonload = DownloadFile(url);
-            var a = AnotherTask();
-            Console.WriteLine("Downloading...");
-            await Task.WhenAll(taskdonload, a);
-            Console.WriteLine("Download success");
-        }
-    }
-}
+//            await task;
+//            Console.WriteLine("Download file complete");
+//        }
+//        public static async Task AnotherTask()
+//        {
+//            Console.WriteLine("1. Loading task 2");
+//            Console.WriteLine("2. Loading task 2");
+//            Console.WriteLine("3. Loading task 2");
+//            Console.WriteLine("4. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("5. Loading task 2");
+//            Console.WriteLine("123. Loading task 2");
+//        }
+//        static async Task Main(string[] args)
+//        {
+//            string url = "https://github.com/microsoft/vscode/archive/1.48.0.tar.gz";
+//            var taskdonload = DownloadFile(url);
+//            var a = AnotherTask();
+//            Console.WriteLine("Downloading...");
+//            await Task.WhenAll(taskdonload, a);
+//            Console.WriteLine("Download success");
+//        }
+//    }
+//}
