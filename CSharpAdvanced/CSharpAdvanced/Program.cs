@@ -1,40 +1,40 @@
-﻿namespace Exercise
+﻿namespace ConsoleApplication.lesson07
 {
-    class Program
+ class IndexersDemo
+ {
+   int[] aInt;
+   public IndexersDemo(int size)
+   {
+    aInt = new int[size];
+   }
+   public int this[int index]
+   {
+    get
     {
-        static void Main(string[] args)
-        {
-            ////ex1
-            ///
-            //Console.Write("Start");
-            //DateTime start = DateTime.Now;
-            //var a = Console.ReadLine();
-            //if (string.IsNullOrWhiteSpace(a))
-            //{
-            //    start = DateTime.Now;
-            //}
-            //Console.Write(" - End: ");
-            //DateTime end = DateTime.Now;
-            //var b = Console.ReadLine();
-            //if (string.IsNullOrWhiteSpace(b))
-            //{
-            //    end = DateTime.Now;
-            //}
-            //Console.Write(end.Subtract(start));
-
-            //// Ex2
-
-            Post post = new Post()
-            {
-                CreatedDate = DateTime.Now,
-                Description = "Probably and Statistic math",
-                Title = "Statistic math",
-            };
-            post.DownVote();
-            post.PrintFullPost();
-
-
-
-        }
+     /* return value base on index*/
+     return aInt[index];
     }
+    set
+    {
+     /* set the specified index to value here */
+     aInt[index] = value;
+    }
+   }
+   static void Main(string[] args)
+   {
+     const int SIZE = 10;
+     IndexersDemo id = new IndexersDemo(SIZE);
+     Random r = new Random();
+     for (int i = 0; i < SIZE; i++)
+     { 
+      id[i] = r.Next(1, 20);
+     }
+     Console.WriteLine("Elements of array ");
+     for (int i = 0; i < SIZE; i++)
+     {
+       Console.Write(id[i] + " ");
+     }
+     Console.ReadLine();
+   }
+ }
 }
