@@ -1,19 +1,20 @@
 ﻿namespace AccessModifier
 {
-    public class Customer
+    class Customer
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public void Promote()
+        private int Id;
+        protected int protectedModifier;
+        protected void Promote()
         {
 
         }
     }
-    public class Program
+    class ProtectedTest : Customer
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer();
+            //protected cho phép truy cập trong cùng class, hoặc class khác kế thừa nó
+            ProtectedTest customer = new ProtectedTest();
             customer.Promote();
         }
     }

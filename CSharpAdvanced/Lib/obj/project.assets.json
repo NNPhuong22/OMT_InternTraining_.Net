@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Lib/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Lib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Lib.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Lib/1.0.0": {
-      "type": "project",
-      "path": "../Lib/Lib.csproj",
-      "msbuildProject": "../Lib/Lib.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Lib >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\nnphu\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj",
-      "projectName": "22. Access modifier",
-      "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\22. Access modifier.csproj",
+      "projectUniqueName": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Lib\\Lib.csproj",
+      "projectName": "Lib",
+      "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Lib\\Lib.csproj",
       "packagesPath": "C:\\Users\\nnphu\\.nuget\\packages\\",
-      "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\22. Access modifier\\obj\\",
+      "outputPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Lib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nnphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Lib\\Lib.csproj": {
-              "projectPath": "F:\\Đi làm\\Github\\OMT_InternTraining_.Net\\CSharpAdvanced\\Lib\\Lib.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
