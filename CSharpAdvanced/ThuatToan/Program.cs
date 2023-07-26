@@ -1,4 +1,6 @@
-﻿namespace ThuatToan
+﻿using System.Diagnostics;
+
+namespace ThuatToan
 {
     class Program
     {
@@ -135,14 +137,34 @@
 
 
             //// 134
+            //00:00:00.0083224
+
             //int[] a = { 12, 20, 1, 60 };
+            //var sw = Stopwatch.StartNew();
             //Console.WriteLine(lonnhat(a));
+            //sw.Stop();
+            //Console.WriteLine(sw.Elapsed);
+            ////00:00:00.0063116
+            //var sw2 = Stopwatch.StartNew();
+            //Console.WriteLine(a.Max(x => x));
+
+            //sw2.Stop();
+            //Console.WriteLine(sw2.Elapsed);
 
 
 
             ////155
-            //int[] a = { 12, -50, 1, 60 };
-            //Console.WriteLine(Bai155(a, 15));
+            int[] a = { 12, -50, 1, 60 };
+
+            var sw = Stopwatch.StartNew();
+            Console.WriteLine(Bai155(a, 15));
+            sw.Stop();
+            Console.WriteLine(sw.Elapsed);
+
+            var sw2 = Stopwatch.StartNew();
+            Console.WriteLine(a.MaxBy(o => Math.Abs(15 - o)));
+            sw2.Stop();
+            Console.WriteLine(sw2.Elapsed);
 
             ////233
             //int[] a = { 12, 50, 1, 60, 1, 1, 23 };
@@ -161,12 +183,8 @@
             //}
             //Bai384(b);
 
-            // 407
-            Bai407(381);
-
-
-            // 449
-
+            //// 407
+            //Bai407(381);
 
         }
         public static int lonnhat(int[] a)
