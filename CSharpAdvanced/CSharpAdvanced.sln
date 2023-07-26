@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "27. Exercise", "27. Exercis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced Topic", "Advanced Topic\Advanced Topic.csproj", "{69048862-E49E-4040-94F9-F9907D35700F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{B8B40D09-3ADD-4F8D-8688-E87F7CA95D21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib", "Lib\Lib.csproj", "{B8B40D09-3ADD-4F8D-8688-E87F7CA95D21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuatToan", "ThuatToan\ThuatToan.csproj", "{ABE0B553-EA11-4EA9-8ED2-30BB9328800E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{B8B40D09-3ADD-4F8D-8688-E87F7CA95D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8B40D09-3ADD-4F8D-8688-E87F7CA95D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8B40D09-3ADD-4F8D-8688-E87F7CA95D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE0B553-EA11-4EA9-8ED2-30BB9328800E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE0B553-EA11-4EA9-8ED2-30BB9328800E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE0B553-EA11-4EA9-8ED2-30BB9328800E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE0B553-EA11-4EA9-8ED2-30BB9328800E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

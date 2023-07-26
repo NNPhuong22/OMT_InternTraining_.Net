@@ -1,0 +1,15 @@
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\bin\Debug\net6.0\ThuatToan.exe
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\bin\Debug\net6.0\ThuatToan.deps.json
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\bin\Debug\net6.0\ThuatToan.runtimeconfig.json
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\bin\Debug\net6.0\ThuatToan.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\bin\Debug\net6.0\ThuatToan.pdb
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.csproj.AssemblyReference.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.GeneratedMSBuildEditorConfig.editorconfig
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.AssemblyInfoInputs.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.AssemblyInfo.cs
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.csproj.CoreCompileInputs.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\refint\ThuatToan.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.pdb
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ThuatToan.genruntimeconfig.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\ThuatToan\obj\Debug\net6.0\ref\ThuatToan.dll
