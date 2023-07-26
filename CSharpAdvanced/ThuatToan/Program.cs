@@ -187,6 +187,7 @@ namespace ThuatToan
             //Bai407(381);
 
         }
+        //dunp: 20230726# tạo hàm riêng cho các bài 111,112 ... 449 ... rồi gọi hàm trong void main . 
         public static int lonnhat(int[] a)
         {
             int max = a[0];
@@ -215,7 +216,8 @@ namespace ThuatToan
             return max;
         }
         public static void Bai233(int[] arr)
-        {
+        {  
+            //dunp: 20230726# tìm hiểu dictionary để lưu số lần xuất hiện của 1 element cùng value trong mảng
             int[] fr = new int[arr.Length];
             int visited = -1;
 
@@ -243,6 +245,7 @@ namespace ThuatToan
         }
         public static void Bai384(List<int> arr)
         {
+          //dunp: 20230726# xem lại bài chưa thấy logic xác định từng chữ số trong số lớn hơn 1 chữ số . 
             int[] fr = new int[arr.Count];
             int visited = -1;
             int max = 0;
@@ -273,6 +276,7 @@ namespace ThuatToan
         }
         public static void Bai407(double number)
         {
+            ////dunp: 20230726# ý bài này là cho 1 ma trận: m*n, n là số dòng, và viết thuật toán để sắp xếp tăng dần cho từng dòng từ trái sang 
             List<int> arr = new List<int>();
             while (Convert.ToInt32(number) != 0)
             {
@@ -297,4 +301,5 @@ namespace ThuatToan
             }
         }
     }
+    //dunp: 20230726# chưa thấy bài 449
 }
