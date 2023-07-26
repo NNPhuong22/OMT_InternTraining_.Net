@@ -50,6 +50,16 @@
                 {
                     Console.WriteLine(genericMethod[i]);
                 }
+                GenericList<string> indexerString = new GenericList<string>(5);
+                indexerString[0] = "a";
+                indexerString[1] = "b";
+                indexerString[2] = "c";
+                indexerString[3] = "d";
+                indexerString[4] = "e";
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine(indexerString[i]);
+                }
             }
         }
     }

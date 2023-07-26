@@ -1,5 +1,7 @@
 ﻿// 10. Extension method
 
+using System.Numerics;
+
 namespace ExtensionMethod
 {
     public static class String
@@ -12,16 +14,8 @@ namespace ExtensionMethod
         }
         public static string CongHaiSo(this string a, string b)
         {
-            double result = 0;
-            try
-            {
-                result = Convert.ToDouble(a) + Convert.ToDouble(b);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            BigInteger result = 0;
+            result = BigInteger.Parse(a) + BigInteger.Parse(b);
             return Convert.ToString(result);
         }
     }
