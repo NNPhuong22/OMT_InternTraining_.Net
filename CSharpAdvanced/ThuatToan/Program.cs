@@ -31,7 +31,10 @@ namespace ThuatToan
             //Bai384(b);
 
             //// 407
-            Bai407();
+            //Bai407();
+
+            // 449
+            Bai449();
 
         }
         //dunp: 20230726# tạo hàm riêng cho các bài 111,112 ... 449 ... rồi gọi hàm trong void main . 
@@ -333,6 +336,69 @@ namespace ThuatToan
                 }
                 Console.WriteLine();
             }
+        }
+        public static void Bai449()
+        {
+            int hang = 0;
+            List<int> numList = new List<int>();
+            List<int> newNumList = new List<int>();
+
+            Console.Write("So Hang:");
+            hang = Convert.ToInt32(Console.ReadLine());
+            int[,] arr = new int[hang, hang];
+            int[,] arr2 = new int[3, 3];
+
+            for (int i = 0; i < hang; i++)
+            {
+
+                for (int j = 0; j < hang; j++)
+                {
+                    Console.Write("arr[{0}][{1}]:", i, j);
+                    arr[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < hang; i++)
+            {
+
+                for (int n = 0; n < hang; n++)
+                {
+                    numList.Add(arr[i, n]);
+                }
+            }
+            for (int i = 0; i < numList.Count; i++)
+            {
+                for (int j = i + 1; j < numList.Count; j++)
+                {
+                    if (numList[i] < numList[j])
+                    {
+                        int temp = numList[i];
+                        numList[i] = numList[j];
+                        numList[j] = temp;
+                    }
+                }
+            }
+            int o = 0;
+            for (int i = 0; i < 3; i++)
+            {
+
+                for (int n = 0; n < 3; n++)
+                {
+                    arr2[i, n] = numList[o];
+                    o++;
+                }
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(" " + arr2[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+
+
         }
     }
     //dunp: 20230726# chưa thấy bài 449
