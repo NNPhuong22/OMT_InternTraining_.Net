@@ -1,0 +1,5 @@
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Lib\obj\Debug\net6.0\Lib.csproj.AssemblyReference.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Lib\obj\Debug\net6.0\Lib.GeneratedMSBuildEditorConfig.editorconfig
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Lib\obj\Debug\net6.0\Lib.AssemblyInfoInputs.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Lib\obj\Debug\net6.0\Lib.AssemblyInfo.cs
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Lib\obj\Debug\net6.0\Lib.csproj.CoreCompileInputs.cache

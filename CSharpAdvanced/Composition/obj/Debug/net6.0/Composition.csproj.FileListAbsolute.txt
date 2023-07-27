@@ -1,0 +1,15 @@
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\bin\Debug\net6.0\Composition.exe
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\bin\Debug\net6.0\Composition.deps.json
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\bin\Debug\net6.0\Composition.runtimeconfig.json
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\bin\Debug\net6.0\Composition.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\bin\Debug\net6.0\Composition.pdb
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.csproj.AssemblyReference.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.GeneratedMSBuildEditorConfig.editorconfig
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.AssemblyInfoInputs.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.AssemblyInfo.cs
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.csproj.CoreCompileInputs.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\refint\Composition.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.pdb
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\Composition.genruntimeconfig.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\Composition\obj\Debug\net6.0\ref\Composition.dll

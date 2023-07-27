@@ -1,0 +1,5 @@
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\22. Access modifier\obj\Debug\net6.0\22. Access modifier.csproj.AssemblyReference.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\22. Access modifier\obj\Debug\net6.0\22. Access modifier.GeneratedMSBuildEditorConfig.editorconfig
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\22. Access modifier\obj\Debug\net6.0\22. Access modifier.AssemblyInfoInputs.cache
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\22. Access modifier\obj\Debug\net6.0\22. Access modifier.AssemblyInfo.cs
+F:\Đi làm\Github\OMT_InternTraining_.Net\CSharpAdvanced\22. Access modifier\obj\Debug\net6.0\22. Access modifier.csproj.CoreCompileInputs.cache

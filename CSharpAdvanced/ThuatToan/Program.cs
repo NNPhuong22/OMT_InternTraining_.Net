@@ -8,7 +8,7 @@ namespace ThuatToan
         {
             //// 111
 
-            //Bai111();
+            Bai111();
 
             //// 112
 
@@ -34,7 +34,7 @@ namespace ThuatToan
             //Bai407();
 
             // 449
-            Bai449();
+            //Bai449();
 
         }
         //dunp: 20230726# tạo hàm riêng cho các bài 111,112 ... 449 ... rồi gọi hàm trong void main . 
