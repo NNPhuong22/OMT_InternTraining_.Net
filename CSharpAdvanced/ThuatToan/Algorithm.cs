@@ -118,20 +118,8 @@
             }
             return number;
         }
-        public int[,] Bai407(int hang, int cot)
+        public int[,] Bai407(int[,] arr, int hang, int cot)
         {
-            int[,] arr = new int[hang, cot];
-
-
-            for (int i = 0; i < hang; i++)
-            {
-
-                for (int j = 0; j < cot; j++)
-                {
-                    Console.Write("arr[{0}][{1}]:", i, j);
-                    arr[i, j] = int.Parse(Console.ReadLine());
-                }
-            }
 
             for (int i = 0; i < hang; i++)
             {
