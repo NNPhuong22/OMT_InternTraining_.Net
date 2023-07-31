@@ -63,6 +63,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
+
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admin", policy =>
@@ -72,12 +73,15 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Customer", policy =>
                   policy.RequireClaim("Role", "2"));
 });
-
+ 
 builder.Services.AddDbContext<Ex2Context>(opt => opt.UseSqlServer(
             builder.Configuration.GetConnectionString("MyPost")));
 //Add transient
-//dunp: giải thích vì sao xài transient mà ko phải là scoped or singleton 
+//dunp@20230731: giải thích vì sao xài transient mà ko phải là scoped or singleton 
 // giải thích thêm scoped là ntn, singleton là ntn trong asp.net 
+
+//dunp@20230731:tự viết 1 middleware để  kiểm jwt ...  https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-7.0
+
 builder.Services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
@@ -99,5 +103,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
