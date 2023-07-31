@@ -118,6 +118,13 @@
             }
             return number;
         }
+        /// <summary>
+        ///  Ham nay la lay sub matrix, inside inputed martrix, hien thi sub matrix co tong lon nhat
+        /// </summary>
+        /// <param name="arr">ma tran 2 chieu bat ky </param>
+        /// <param name="hang"></param>
+        /// <param name="cot"></param>
+        /// <returns></returns>
         public int[,] Bai407(int[,] arr, int hang, int cot)
         {
 
@@ -130,6 +137,7 @@
                     {
                         if (arr[i, n] > arr[i, k])
                         {
+                            //dunp@20230731: selection sort, bubble sort ... tim ham co san trong thu vien .net , roi viet test toc do xai stopwatch
                             int swap = arr[i, n];
                             arr[i, n] = arr[i, k];
                             arr[i, k] = swap;

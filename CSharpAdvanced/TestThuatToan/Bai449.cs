@@ -30,7 +30,7 @@ namespace TestThuatToan
             b[2, 0] = 5;
             b[2, 1] = 9;
             b[2, 2] = 10;
-            var result = algorithm.Bai449(a, 3);
+            var result = algorithm.Bai449(a, 2);
             Assert.Equal(b, result);
         }
         [Fact]

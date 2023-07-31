@@ -37,5 +37,5 @@ namespace LambdaExpressions
         }
     }
 }
-
+//dunp@20230721: doc va thuc hanh queue, stack : https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections
 //dunp: đọc thêm , viết các ví dụ chạy trên console dựa trên https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions

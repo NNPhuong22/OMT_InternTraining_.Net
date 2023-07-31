@@ -17,7 +17,7 @@ namespace TestThuatToan
         [Fact]
         public void NhapInputAm()
         {
-            List<int> a = new List<int> { 0, 0, 0, 0, 0, 0,, 0, 0, 0 };
+            List<int> a = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             var result = algorithm.Bai384(a);
             Assert.Equal(0, result);
         }
