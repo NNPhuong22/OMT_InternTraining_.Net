@@ -1,3 +1,4 @@
+using Ex2_OMT.Auth;
 using Ex2_OMT.Models;
 using Ex2_OMT.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -63,17 +64,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
+builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("Admin", policy =>
-                      policy.RequireClaim("Role", "1"));
-    options.AddPolicy("Both", policy =>
-                  policy.RequireClaim("Role", "1", "2"));
-    options.AddPolicy("Customer", policy =>
-                  policy.RequireClaim("Role", "2"));
-});
- 
 builder.Services.AddDbContext<Ex2Context>(opt => opt.UseSqlServer(
             builder.Configuration.GetConnectionString("MyPost")));
 //Add transient
@@ -88,7 +80,8 @@ builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IPostRepository, PostRepository>();
 builder.Services.AddTransient<ICommentRepository, CommentRepository>();
 builder.Services.AddTransient<IRoleRepository, RoleRepository>();
-
+builder.Services.AddTransient<IJwtUtils, JwtUtils>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 var app = builder.Build();
 app.UseCors(option => option.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 // Configure the HTTP request pipeline.
@@ -101,6 +94,7 @@ if (app.Environment.IsDevelopment())
 app.UseAuthentication();
 
 app.UseAuthorization();
+app.UseMiddleware<JwtMiddleware>();
 
 app.MapControllers();
 

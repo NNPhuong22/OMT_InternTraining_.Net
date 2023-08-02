@@ -1,6 +1,6 @@
-﻿using Ex2_OMT.Models;
+﻿using Ex2_OMT.Auth;
+using Ex2_OMT.Models;
 using Ex2_OMT.Repositories;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ex2.Controllers
@@ -14,7 +14,7 @@ namespace Ex2.Controllers
         {
             _categoryRepository = categoryRepository;
         }
-        [Authorize(Policy = "Both")]
+        [Authorize]
         [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll(string? search = "", int? isDeleted = null, int page = 1)
         {
@@ -22,7 +22,6 @@ namespace Ex2.Controllers
             return Ok(category);
         }
 
-        [Authorize(Policy = "Admin")]
         [HttpPut("Disable")]
         public async Task<IActionResult> DisableCategory(int id)
         {
@@ -30,7 +29,6 @@ namespace Ex2.Controllers
             return Ok(category);
         }
 
-        [Authorize(Policy = "Admin")]
         [HttpPost("GetCategory")]
         public async Task<IActionResult> GetUser(int id)
         {
@@ -38,7 +36,6 @@ namespace Ex2.Controllers
             return Ok(category);
         }
 
-        [Authorize(Policy = "Admin")]
         [HttpPost("CreateCategory")]
         public async Task<IActionResult> CreateCategory(string category)
         {
@@ -46,7 +43,6 @@ namespace Ex2.Controllers
             return Ok(categoryCreated);
         }
 
-        [Authorize(Policy = "Admin")]
         [HttpPut("EditCategory")]
         public async Task<IActionResult> EditCategory(CategoryDTO category)
         {

@@ -76,11 +76,8 @@
         }
         public int Bai384(List<int> arr)
         {
-            //dunp: 20230726# xem lại bài chưa thấy logic xác định từng chữ số trong số lớn hơn 1 chữ số . 
             int[] a = { 12, 50, 1, 60, 1, 1, 23 };
             List<int> b = new List<int>();
-
-            // em dùng vòng for với while này để tách từng chữ số ở các số rồi cho vào list b ở bên trên ạ
             for (int i = 0; i < a.Length; i++)
             {
                 while (a[i] != 0)
@@ -118,13 +115,6 @@
             }
             return number;
         }
-        /// <summary>
-        ///  Ham nay la lay sub matrix, inside inputed martrix, hien thi sub matrix co tong lon nhat
-        /// </summary>
-        /// <param name="arr">ma tran 2 chieu bat ky </param>
-        /// <param name="hang"></param>
-        /// <param name="cot"></param>
-        /// <returns></returns>
         public int[,] Bai407(int[,] arr, int hang, int cot)
         {
 
@@ -137,7 +127,6 @@
                     {
                         if (arr[i, n] > arr[i, k])
                         {
-                            //dunp@20230731: selection sort, bubble sort ... tim ham co san trong thu vien .net , roi viet test toc do xai stopwatch
                             int swap = arr[i, n];
                             arr[i, n] = arr[i, k];
                             arr[i, k] = swap;
@@ -149,6 +138,7 @@
 
             return arr;
         }
+
         public int[,] Bai449(int[,] arr, int hang)
         {
             int[,] arr2 = new int[3, 3];

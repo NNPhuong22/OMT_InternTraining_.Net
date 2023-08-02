@@ -67,3 +67,4 @@ F:\Đi làm\Github\OMT_InternTraining_.Net\Ex2_OMT\Ex2_OMT\obj\Debug\net6.0\refi
 F:\Đi làm\Github\OMT_InternTraining_.Net\Ex2_OMT\Ex2_OMT\obj\Debug\net6.0\Ex2_OMT.pdb
 F:\Đi làm\Github\OMT_InternTraining_.Net\Ex2_OMT\Ex2_OMT\obj\Debug\net6.0\Ex2_OMT.genruntimeconfig.cache
 F:\Đi làm\Github\OMT_InternTraining_.Net\Ex2_OMT\Ex2_OMT\obj\Debug\net6.0\ref\Ex2_OMT.dll
+F:\Đi làm\Github\OMT_InternTraining_.Net\Ex2_OMT\Ex2_OMT\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
